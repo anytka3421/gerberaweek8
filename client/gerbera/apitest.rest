@@ -1,0 +1,141 @@
+###
+
+GET http://localhost:8600/seebouquets
+
+
+###
+
+POST http://localhost:8600/addbouquet
+Content-Type: application/json
+
+{
+    "image": "frekgbnregjrbegker",
+    "title": "New Bouquet 2",
+    "description": "Some description for this bouquet 2",
+    "price": 40,
+    "stock": 1
+}
+
+###
+
+PUT http://localhost:86000/updatebouqprice
+Content-Type: application/json
+
+{
+    "title": "fkwebfekjwf",
+    "description": "fksfbek",
+    "price": 100,
+    "stock": 1,
+    "image": "fkjrbfhjrekf"
+
+}
+
+###
+
+DELETE http://localhost:8600/deletebouquet
+Content-Type: application/json
+
+{
+    "id": 4
+}
+
+
+
+
+
+# ETIQUETTE
+
+
+###
+
+GET http://localhost:8600/bouquets
+
+
+###
+
+POST http://localhost:8600/bouquets
+Content-Type: application/json
+
+{
+    "image": "234",
+    "title": "Gfa",
+    "description": "123",
+    "price": 456,
+    "stock": 0
+}
+
+
+# TEST THIS!
+
+###
+
+PUT http://localhost:8600/bouquets/10
+Content-Type: application/json
+
+{
+    "title": "123",
+    "description": "233",
+    "price": 230,
+    "stock": 12,
+    "image": "334"
+
+}
+
+###
+
+DELETE http://localhost:8600/bouquets/6
+
+
+
+
+
+###
+
+DELETE http://localhost:8600/bouquets/
+Content-Type: application/json
+
+{
+    "id": 4
+}
+
+###
+
+GET http://localhost:8600/bouquets/
+
+
+
+
+
+###
+
+GET http://localhost:8600/bouquets/1
+Content-Type: application/json
+
+{
+    "id": "tom cruise"
+}
+
+# Tests req.params.id in node console
+
+
+###
+
+GET http://localhost:8600/bouquets/1
+# Content-Type: application/json
+
+# {
+#     "id": "tom cruise"
+# }
+
+# Tests req.params.id in node console
+
+
+###
+POST http://localhost:8600/validateuser
+Content-Type: application/json
+
+{
+    "email": "anytka3421@gmail.com",
+    "password": 12345
+}
+

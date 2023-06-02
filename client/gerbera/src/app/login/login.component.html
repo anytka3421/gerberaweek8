@@ -1,0 +1,30 @@
+<div class="screenHeight">
+  <div class="container marginTop">
+
+  <h3>Welcome, Admin!</h3>
+
+  <label for="login">Your Email</label> <br>
+  <input id="login" type="text" [(ngModel)]="email" >
+
+  <br><br>
+
+  <label for="password">Your Password</label> <br>
+  <input id="password" type="text" [(ngModel)]="password"> <br>
+  <div *ngIf="!loginSuccess" id="validationServer05Feedback" class="invalid-feedback">
+      Check your password
+    </div>
+
+  <a href="">Don't remember Password?</a>
+
+  <br><br>
+
+  <button class="btn btn-primary" (click)="login()">Log In</button>
+  <br>
+  <a routerLink="/admin">Login as Admin</a>
+
+  <div [class]="trueMessageVisible" *ngIf="loginSuccess">All good!</div>
+  <div [class]="falseMessageVisible" *ngIf="!loginSuccess">Go check you email and password</div>
+  </div>
+  </div>
+
+

@@ -1,0 +1,76 @@
+<!--
+  1. nav
+  2. Typo banner
+  3. col-2 and col-10
+  => 3.0. col-2: filters
+  => 3.1. col-10 / info row + row: col-4 + pagination row
+  4. footer
+ -->
+
+ <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container py-3">
+    <a class="navbar-brand" href="#">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mc-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Bouquets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form> -->
+    </div>
+    <div class="icons">
+      <a routerLink="/login"><img src="../assets/icons/account.png" alt="" class="navIcon"></a>
+    </div>
+  </div>
+</nav>
+
+<app-banner></app-banner>
+
+<div class="container">
+  <div class="row mt-5 mt-562-5">
+    <div class="col-md-2">
+      <app-filter></app-filter>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+      <div class="row info">
+        <div class="col-md-9">
+        </div>
+        <div class="col-md-3">
+          <div class="sortBy">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Sort By</option>
+              <option value="1">Price Low to High</option>
+              <option value="2">Price High to Low</option>
+              <option value="3">Rating</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+          <div class="col-12">
+
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>

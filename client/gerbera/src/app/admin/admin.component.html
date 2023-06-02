@@ -1,0 +1,53 @@
+<!-- <p>admin works!</p> -->
+
+<!--
+<input type="text " placeholder="Bouquet Name">
+<input type="text" placeholder="Price"> -->
+
+<a routerLink="/createproduct"><button class="btn btn-success">Create New Product</button></a>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Image</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let product of products'>
+        <th scope="row" > {{ product.id }}</th>
+        <td><p>{{product.name}}</p></td>
+        <td><p>{{product.description}}</p></td>
+        <td><p>{{product.price}}</p></td>
+        <td><p>{{product.image}}"</p></td>
+        <td>
+          <!-- <input type="text" [(ngModel)] = "stock" placeholder="{{bouquet.stock}}"> -->
+          <div class="inStock" *ngIf="product.stock === 0">Out Of Stock</div>
+          <div class="inStock" *ngIf="product.stock === 1">In Stock</div>
+        </td>
+        <td><p>{{product.image}}"</p></td>
+        <td>
+          <div class="hiddenProduct" *ngIf="product.display === 0">
+            <div class="displayMessage">Product is Hidden</div>
+            <button class="btn btn-light" (click)="showProduct()">Show</button>
+          </div>
+
+          <div class="displayedProduct" *ngIf="product.display === 1">
+            <div class="displayMessage">Product is Displayed</div>
+            <button class="btn btn-dark" (click)="hideProduct()">Hide</button>
+          </div>
+
+        </td>
+        <td class="buttons">
+            <a routerLink="/editinfo/{{product.id}}"><button class="btn btn-primary">Edit Data</button></a>
+            <a><button class="btn btn-danger" (click)="delete()">Delete</button></a>
+</td>
+      </tr>
+      <tr>
+
+

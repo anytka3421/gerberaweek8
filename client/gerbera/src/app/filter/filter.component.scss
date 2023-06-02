@@ -1,0 +1,84 @@
+.filters {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  .filterFlex {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    .filterIcon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .filterTitle {
+    border-bottom: 1px solid rgb(223, 223, 223);
+  }
+
+
+    .filterIcon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .type {
+    border-bottom: 1px solid rgb(223, 223, 223);
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+
+    .form-check-input {
+      width: 18px;
+      height: 18px;
+      margin-left: 0;
+    }
+
+    .form-check-input:checked {
+      background-color: orangered;
+      border-color: orangered;
+    }
+  }
+
+  .color {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .colorCircle {
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .pink {
+    background-color: orangered;
+  }
+
+  .blue {
+    background-color: rgb(149, 186, 229);
+  }
+
+  .purple {
+    background-color: rgb(209, 186, 249);
+  }
+
+  @media only screen and (max-width: 562px) {
+    .hide {
+      display: none;
+    }
+
+    .filterFlex,
+    .type {
+      border: 0px solid grey;
+    }
+  }
+

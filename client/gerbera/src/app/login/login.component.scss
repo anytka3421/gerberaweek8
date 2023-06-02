@@ -1,0 +1,73 @@
+$form-bg-color: #ff0000;
+$form-border-color: #ccc;
+$form-input-bg-color: #fff;
+$form-input-focus-bg-color: #f8f8f8;
+$form-input-border-radius: 8px;
+
+$form-label-font-size: 18px;
+$form-input-font-size: 16px;
+$form-button-font-size: 18px;
+
+.form-container {
+  background-color: $form-bg-color;
+  padding: 20px;
+  border-radius: $form-input-border-radius;
+  border: 1px solid $form-border-color;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: $form-label-font-size;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $form-border-color;
+  border-radius: $form-input-border-radius;
+  background-color: $form-input-bg-color;
+  font-size: $form-input-font-size;
+
+  &:focus {
+    outline: none;
+    background-color: $form-input-focus-bg-color;
+    border-color: $form-border-color;
+    box-shadow: 0 0 5px $form-border-color;
+  }
+}
+
+.forgot-password {
+  color: rgb(0, 86, 24);
+  text-decoration: none;
+  margin-top: 5px;
+  display: block;
+}
+
+.btn-primary {
+  background-color: #ff5100;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: $form-button-font-size;
+
+  &:hover {
+    background-color: #761f00;
+  }
+}
+
+.message {
+  color: green;
+  margin-top: 10px;
+}
+
+.falseMessage {
+  color: red;
+  margin-top: 10px;
+}
+

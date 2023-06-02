@@ -1,0 +1,27 @@
+<div class="create-product">
+  <label for="title">Name</label> <br>
+  <input type="text" id="title" placeholder="Enter Product Name" [(ngModel)]='name'>
+  <div>{{name}}</div>
+  <br><br>
+
+  <label for="title">Description</label> <br>
+  <input type="text" id="description" placeholder="Enter Product Description" [(ngModel)]="description">
+  <br><br>
+
+  <label for="price">Price</label> <br>
+  <input type="text" id="price" placeholder="Enter Price" [(ngModel)]="price">
+  <div>{{ price }}</div>
+  <br><br>
+
+  <label for="title">Stock</label> <br>
+  <div class="updateStock">
+    <input type="text" id="stock" placeholder="Choose Stock" [(ngModel)]="stock">
+  </div>
+  <br><br>
+
+  <label for="title">Image</label> <br>
+  <input type="text" id="image" placeholder="Upload Image" [(ngModel)]="image">
+  <br><br>
+
+  <button (click)="createProduct()" class="btn btn-success">Create Product</button>
+</div>
